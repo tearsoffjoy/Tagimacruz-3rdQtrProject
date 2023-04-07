@@ -1,0 +1,224 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+		background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(248, 137, 11));
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+header{
+	width:  100%; /*makes the navigate fill the upmost part*/
+	height: 60px;
+	background-color: #ffb656; /*light brown*/
+	position: sticky;
+}
+header h2{
+	position: absolute;
+	padding: 3px;
+	float: left;
+	margin-left: 5%;
+	margin-top: 10px;
+	font-family: 'papyrus','fantasy';
+	color: white; 
+}
+header img {
+  margin:5px;
+  float: left;
+  border-radius: 50%; /*to make the logo round*/
+  height: 50px;
+  width: 50px;
+}
+nav {
+	position: relative;
+	width: auto;  
+	float: right; /*to place them beside eachother*/
+	margin-top: 8px;
+}
+nav li {
+	display: inline-block;
+	padding: 15px 30px;	
+}
+nav a {
+	text-align: center;
+	color: white;
+	text-decoration: none; /*to remove bullets*/
+	font-family: 'sans-serif';
+	font-size: 1.2vw;
+}
+nav a:hover{
+	color: black; /*changes the color to black once hovered*/
+	transition-duration: 1.5s;
+}
+nav a:active{
+	text-decoration: underline; /*adds an underline once active*/
+}
+@keyframes begin {
+		from { /*before*/
+			opacity: 0;
+			transform: rotateX(-10deg); /*a little spin*/
+		}
+		to { /*after*/
+			opacity: 1;
+			transform: rotateX(0);
+		}
+	}
+	article{
+		animation-name: begin;
+		animation-duration: 1.5s;
+		animation-iteration-count: 1;
+	}
+/*index html style*/
+.indexheading{
+	margin-top: 50px;
+	margin-left: 90px;
+	width: 50%;
+	color: #ff7b00; /*dark brown*/
+	font-family: arial black, sans-serif;
+	font-size: 3vw;
+	text-align: left;
+	position: relative;
+}
+
+.indexpar1{
+	margin-top: 10px;
+	margin-left: 90px;
+	padding: 10px;
+	width: 40%;
+	color: #262012;
+	border: 2px solid black;
+	border-color: #f3a412;
+	border-radius: 10px 20px 10px 20px; /*changes bordar radius of each corner*/
+	background-color: #fff4c5; /*light green*/
+	font-family: garamond, serif;
+	font-size: 1.5vw;
+	text-align: left;
+}
+.login {
+	margin-right: 90px;
+	padding: 30px;
+	width: 30%;
+    float: right;
+	color: #262012;
+	border: 2px solid #f3a412;
+	border-color: #f3a412;
+	border-radius: 20px; /*changes bordar radius of each corner*/
+	background-color: #fff4c5;
+	font-family: garamond, serif;
+    text-align: justify;
+}
+hr{
+    border-color: #f3a412;
+}
+input[type=text] {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 90%;
+    border-color: #f3a412;
+    background-color:  #fcfcfc;
+}
+input[type=text]:focus {
+    background-color: #ffb950;
+}
+h5{
+    color: #262012; /*dark brown*/
+	font-family: arial black, sans-serif;
+	font-size: 1vw;
+}
+span {
+    color: rgb(172, 42, 42);
+	font-size: 17px;
+}
+article button{
+	margin-top: 30px;
+	border: none;
+	border-radius: 20px;
+    outline: none;
+    width: 40%;
+ 	display: inline-block;
+    padding: 10px 25px;
+    color: rgb(255, 255, 255);
+    background-color: #ffffff; 
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    box-shadow: 0 8px 10px rgb(255, 176, 4); /*adds shadow*/
+ }
+ article button h1 {
+ 	color: rgb(255, 136, 57); /*changes the color of the link*/
+ 	text-decoration: none; /*removes the underline beneath the link*/
+    text-align: center;
+ }
+ article button:hover {
+  background-color: lightgray; /*light gray*/
+  color: white;
+  transform: scale(1.1); /*makes the button larger*/
+}
+footer{
+	text-align: center;
+	background-color:rgb(238, 151, 52);
+	width: 100%;
+	position: absolute;
+	bottom: 0; /*makes the footer stay at the bottom*/
+	left: 0;
+	right: 0;
+	color: white; 
+	padding-bottom: 2px;
+	padding-top: 9px;
+}
+h4{
+    font-size: 15px;
+	font-family: garamond, serif;
+}
+footer ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+#fb {
+	background: url(sites.jpg) no-repeat -82px -13px/600px 130px; /*changes the location of the icon/the size of the photo*/
+	width: 30px; /*size of the icons on the website*/
+	height: 29px;
+	border-radius: 20%; /*makes it rounder*/
+}
+#twt {
+	background: url(sites.jpg) no-repeat -198px -13px/600px 130px;
+	width: 30px;
+	height: 29px;
+	border-radius: 20%;
+}
+#ig {
+	background: url(sites.jpg) no-repeat -25px -13px/600px 130px;
+	width: 30px;
+	height: 29px;
+	border-radius: 20%;
+}
+#fb:hover {
+	background: url(sites.jpg) no-repeat -82px -54px/600px 130px;
+	width: 30px;
+	height: 29px;
+	border-radius: 20%;
+}
+#twt:hover {
+	background: url(sites.jpg) no-repeat -198px -54px/600px 130px;
+	width: 30px;
+	height: 29px;
+	border-radius: 20%;
+}
+#ig:hover {
+	background: url(sites.jpg) no-repeat -25px -54px/600px 130px;
+	width: 30px;
+	height: 29px;
+	border-radius: 20%;
+}
+::selection{
+	color:white; /*changes a color once something is selected*/
+	background:#f07706;
+}
